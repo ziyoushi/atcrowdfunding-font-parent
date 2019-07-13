@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: atcrowdfunding-app
+  redis:
+    host: 192.168.199.150 #配置redis的连接
+
+server:
+  port: 9000
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    prefer-ip-address: true
